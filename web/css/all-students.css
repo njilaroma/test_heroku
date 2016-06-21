@@ -1,0 +1,11 @@
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.text-white {
+  color: #ffffff;
+}
+
+.team_background_back{
+  color: #000000
+}
