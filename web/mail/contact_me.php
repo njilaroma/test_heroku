@@ -39,6 +39,21 @@ $email->addTo($to)
     ->setHtml($email_body);
 
 $sendgrid->send($email);
+
+/**
+*Email for sender
+*/
+
+$email_subject_copy = 'Copy of your message';
+
+$emailForSender = new SendGrid\Email();
+$emailForSender->addTo($email_address)
+    ->setFrom('noreply@njilaroma.com')
+    ->setSubject($email_subject_copy)
+    ->setText($message)
+    ->setHtml($message);
+$sendgrid->send($emailForSender);
+
 return true;
 
 ?>
