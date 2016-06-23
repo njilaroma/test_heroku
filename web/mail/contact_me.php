@@ -1,6 +1,6 @@
 <?php
-require 'vendor/autoload.php';
-$sendgrid = new SendGrid('njilaroma', 'njila_roma_06_2016');
+require('../vendor/autoload.php');
+$sendgrid = new SendGrid(SENDGRID_USERNAME, SENDGRID_PASSWORD);
 
 header("Access-Control-Allow-Origin: *");
 
@@ -9,7 +9,7 @@ if(empty($_POST['name'])      ||
    empty($_POST['email'])     ||
    empty($_POST['phone'])     ||
    empty($_POST['message'])   ||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+   !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
    {
    echo "No arguments Provided!";
    return false;
