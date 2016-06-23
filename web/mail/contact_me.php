@@ -1,5 +1,5 @@
 <?php
-require('../vendor/autoload.php');
+require('../../vendor/autoload.php');
 $sendgrid = new SendGrid(SENDGRID_USERNAME, SENDGRID_PASSWORD);
 
 header("Access-Control-Allow-Origin: *");
