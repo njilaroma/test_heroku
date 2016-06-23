@@ -1,6 +1,6 @@
 <?php
 require('../../vendor/autoload.php');
-$sendgrid = new SendGrid('app52523731@heroku.com', 'njila_roma_06_2016');
+$sendgrid = new SendGrid('njilaroma', 'njila_roma_06_2016');
 
 header("Access-Control-Allow-Origin: *");
 
