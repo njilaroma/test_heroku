@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "http://njilaroma.atwebpages.com/contact_me.php",
+                url: "https://polar-headland-50485.herokuapp.com/mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
